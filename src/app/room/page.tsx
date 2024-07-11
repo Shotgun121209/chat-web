@@ -37,9 +37,9 @@ export default function Room() {
         <ul className="bg-white shadow p-4 rounded-xl w-full max-w-md">
             {Object.keys(rooms).map((roomId) => (
                 <li key={roomId} className="mb-2">
-                    <button className="bg-gray-100 py-2 px-4 rounded-lg w-full hover: bg-gray-300 transition duration-300 "
+                    <button className="text-black bg-gray-100 py-2 px-4 rounded-lg w-full hover:bg-gray-300 transition duration-300 "
                     onClick={() => {
-                        router.push('/room/${roomId}')
+                        router.push(`/room/${roomId}`)
                     }}
                     >{rooms[roomId]}</button>
                 </li>
