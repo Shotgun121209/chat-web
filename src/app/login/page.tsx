@@ -46,15 +46,15 @@ export default function Login() {
         return (
                 <div className="flex h-screen items-center justify-center bg-gray-100">
                     <form className="bg-white shadow p-8 rounded-xl w-full max-w-md" onSubmit={handleSignUpSubmit}>
-                        <h2 className="text-center text-2xl font-bold mb-8">Sign Up to Chat</h2>
-                    <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="email" value={email} placeholder="Enter a email" onChange={(e) => setEmail(e.target.value)} />
+                        <h2 className="text-center text-2xl font-bold mb-8 text-black">Sign Up to Chat</h2>
+                    <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="email" value={email} placeholder="Enter an email" onChange={(e) => setEmail(e.target.value)} />
                     <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="password" value={pwd} placeholder="Enter a password" onChange={(e) => setPwd(e.target.value)} />
-                    <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="password" value={pwdValid} placeholder="Type Password Again" onChange={(e) => setPwdValid(e.target.value)} />
+                    <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="password" value={pwdValid} placeholder="Confirm password" onChange={(e) => setPwdValid(e.target.value)} />
                     <button type="submit" className="w-full bg-blue-500 text-white font-bold py-2 rounded hover:bg-blue-700 transition duration-300">
                         Sign Up
                     </button>
                     <button
-                    className="mt-3" 
+                    className="mt-3 text-black" 
                     onClick={() => {
                     setSignUp(false);
                     setEmail("")
@@ -68,14 +68,14 @@ export default function Login() {
         return (
             <div className="flex h-screen items-center justify-center bg-gray-100">
                 <form className="bg-white shadow p-8 rounded-xl w-full max-w-md" onSubmit={handleSignInSubmit}>
-                    <h2 className="text-center text-2xl font-bold mb-8">Welcome to Chat</h2>
+                    <h2 className="text-center text-2xl font-bold mb-8 text-black">Welcome to Chat</h2>
                 <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="email" value={email} placeholder="Enter your email" onChange={(e) => setEmail(e.target.value)} />
                 <input className="border border-gray-400 w-full mb-4 py-2 px-3 rounded" type="password" value={pwd} placeholder="Enter your password" onChange={(e) => setPwd(e.target.value)} />
                 <button type="submit" className="w-full bg-blue-500 text-white font-bold py-2 rounded hover:bg-blue-700 transition duration-300">
                     Sign-in with email
                 </button>
                 <button 
-                className="mt-3" 
+                className="mt-3 text-black" 
                 onClick={() => {
                     setSignUp(true);
                     setEmail("")
